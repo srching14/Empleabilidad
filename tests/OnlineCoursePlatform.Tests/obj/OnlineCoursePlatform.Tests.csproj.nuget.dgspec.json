@@ -1,0 +1,291 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/Coder/Escritorio/Empleabilidad/tests/OnlineCoursePlatform.Tests/OnlineCoursePlatform.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Application/OnlineCoursePlatform.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Application/OnlineCoursePlatform.Application.csproj",
+        "projectName": "OnlineCoursePlatform.Application",
+        "projectPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Application/OnlineCoursePlatform.Application.csproj",
+        "packagesPath": "/home/Coder/.nuget/packages/",
+        "outputPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/Coder/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/OnlineCoursePlatform.Domain.csproj": {
+                "projectPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/OnlineCoursePlatform.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/OnlineCoursePlatform.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/OnlineCoursePlatform.Domain.csproj",
+        "projectName": "OnlineCoursePlatform.Domain",
+        "projectPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/OnlineCoursePlatform.Domain.csproj",
+        "packagesPath": "/home/Coder/.nuget/packages/",
+        "outputPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/Coder/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Infrastructure/OnlineCoursePlatform.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Infrastructure/OnlineCoursePlatform.Infrastructure.csproj",
+        "projectName": "OnlineCoursePlatform.Infrastructure",
+        "projectPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Infrastructure/OnlineCoursePlatform.Infrastructure.csproj",
+        "packagesPath": "/home/Coder/.nuget/packages/",
+        "outputPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/Coder/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Application/OnlineCoursePlatform.Application.csproj": {
+                "projectPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Application/OnlineCoursePlatform.Application.csproj"
+              },
+              "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/OnlineCoursePlatform.Domain.csproj": {
+                "projectPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/OnlineCoursePlatform.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/Coder/Escritorio/Empleabilidad/tests/OnlineCoursePlatform.Tests/OnlineCoursePlatform.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/Coder/Escritorio/Empleabilidad/tests/OnlineCoursePlatform.Tests/OnlineCoursePlatform.Tests.csproj",
+        "projectName": "OnlineCoursePlatform.Tests",
+        "projectPath": "/home/Coder/Escritorio/Empleabilidad/tests/OnlineCoursePlatform.Tests/OnlineCoursePlatform.Tests.csproj",
+        "packagesPath": "/home/Coder/.nuget/packages/",
+        "outputPath": "/home/Coder/Escritorio/Empleabilidad/tests/OnlineCoursePlatform.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/Coder/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Application/OnlineCoursePlatform.Application.csproj": {
+                "projectPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Application/OnlineCoursePlatform.Application.csproj"
+              },
+              "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/OnlineCoursePlatform.Domain.csproj": {
+                "projectPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Domain/OnlineCoursePlatform.Domain.csproj"
+              },
+              "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Infrastructure/OnlineCoursePlatform.Infrastructure.csproj": {
+                "projectPath": "/home/Coder/Escritorio/Empleabilidad/src/OnlineCoursePlatform.Infrastructure/OnlineCoursePlatform.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

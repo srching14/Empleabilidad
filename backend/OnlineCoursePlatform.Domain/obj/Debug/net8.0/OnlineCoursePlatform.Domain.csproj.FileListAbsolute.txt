@@ -1,0 +1,11 @@
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/bin/Debug/net8.0/OnlineCoursePlatform.Domain.deps.json
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/bin/Debug/net8.0/OnlineCoursePlatform.Domain.dll
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/bin/Debug/net8.0/OnlineCoursePlatform.Domain.pdb
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/obj/Debug/net8.0/OnlineCoursePlatform.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/obj/Debug/net8.0/OnlineCoursePlatform.Domain.AssemblyInfoInputs.cache
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/obj/Debug/net8.0/OnlineCoursePlatform.Domain.AssemblyInfo.cs
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/obj/Debug/net8.0/OnlineCoursePlatform.Domain.csproj.CoreCompileInputs.cache
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/obj/Debug/net8.0/OnlineCoursePlatform.Domain.dll
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/obj/Debug/net8.0/refint/OnlineCoursePlatform.Domain.dll
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/obj/Debug/net8.0/OnlineCoursePlatform.Domain.pdb
+/home/Coder/Escritorio/Empleabilidad/backend/OnlineCoursePlatform.Domain/obj/Debug/net8.0/ref/OnlineCoursePlatform.Domain.dll

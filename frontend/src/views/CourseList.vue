@@ -115,7 +115,7 @@
             
             <div class="flex items-center gap-3 text-gray-500 text-xs font-bold uppercase tracking-widest bg-white/5 py-2 px-4 rounded-xl w-fit">
               <Layers class="w-4 h-4" />
-              {{ Math.floor(Math.random() * 12) + 4 }} Lecciones
+              {{ course.lessons?.length || 0 }} Lecciones
             </div>
           </div>
           
@@ -131,10 +131,20 @@
             <button 
               v-if="course.status === 'Draft'"
               @click="publishCourse(course.id)"
-              class="bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white px-4 py-3 rounded-xl font-bold text-sm transition-all border border-emerald-500/20"
+              class="bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white px-4 py-3 rounded-xl font-bold text-sm transition-all border border-emerald-500/20 flex items-center gap-2"
               title="Publicar Curso"
             >
               <Send class="w-4 h-4" />
+              <span>Publicar</span>
+            </button>
+            <button 
+              v-else
+              @click="unpublishCourse(course.id)"
+              class="bg-amber-600/10 hover:bg-amber-600 text-amber-400 hover:text-white px-4 py-3 rounded-xl font-bold text-sm transition-all border border-amber-500/20 flex items-center gap-2"
+              title="Quitar Publicación"
+            >
+              <X class="w-4 h-4" />
+              <span>Borrador</span>
             </button>
           </div>
         </div>
@@ -273,7 +283,17 @@ const publishCourse = async (id) => {
     await api.post(`/courses/${id}/publish`)
     fetchCourses()
   } catch (error) {
-    alert(error.response?.data?.message || 'No se puede publicar el curso (asegúrate de que tenga lecciones activas)')
+    const msg = error.response?.data || error.message
+    alert(typeof msg === 'string' ? msg : 'Error al publicar: Asegúrate de tener al menos una lección.')
+  }
+}
+
+const unpublishCourse = async (id) => {
+  try {
+    await api.post(`/courses/${id}/unpublish`)
+    fetchCourses()
+  } catch (error) {
+    console.error(error)
   }
 }
 

@@ -64,6 +64,15 @@
           <span class="text-xs text-gray-400 font-mono">Admin123!</span>
         </div>
       </div>
+      <div class="mt-8 pt-8 border-t border-white/5 text-center">
+          <p class="text-gray-500 text-sm font-medium">
+            ¿No tienes cuenta? 
+            <router-link to="/register" class="text-blue-500 hover:text-white font-bold transition-colors">Regístrate gratis</router-link>
+          </p>
+          <div class="mt-4 opacity-30 group cursor-default">
+            <p class="text-[10px] font-mono text-gray-600">Demo: admin@courseplatform.com / Admin123!</p>
+          </div>
+        </div>
     </div>
   </div>
 </template>

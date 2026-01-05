@@ -33,6 +33,28 @@ public class AuthController : ControllerBase
         return Unauthorized();
     }
 
+    [HttpPost("register")]
+    public async Task<IActionResult> Register([FromBody] RegisterModel model)
+    {
+        var userExists = await _userManager.FindByEmailAsync(model.Email);
+        if (userExists != null)
+            return BadRequest("El usuario ya existe.");
+
+        var user = new ApplicationUser
+        {
+            UserName = model.Email,
+            Email = model.Email,
+            EmailConfirmed = true
+        };
+
+        var result = await _userManager.CreateAsync(user, model.Password);
+        if (result.Succeeded)
+        {
+            return Ok(new { message = "Usuario registrado exitosamente" });
+        }
+        return BadRequest(result.Errors);
+    }
+
     private string GenerateJwtToken(ApplicationUser user)
     {
         var jwtSettings = _configuration.GetSection("JwtSettings");
@@ -58,3 +80,4 @@ public class AuthController : ControllerBase
 }
 
 public class LoginModel { public string Email { get; set; } = string.Empty; public string Password { get; set; } = string.Empty; }
+public class RegisterModel { public string Email { get; set; } = string.Empty; public string Password { get; set; } = string.Empty; }

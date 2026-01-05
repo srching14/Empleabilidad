@@ -59,18 +59,18 @@ Si prefiere ejecutar los componentes de forma independiente:
 
 ### Configuración de la Base de Datos
 1. Asegúrese de que PostgreSQL esté en ejecución.
-2. Actualice la cadena de conexión en `src/OnlineCoursePlatform.API/appsettings.json`.
+2. Actualice la cadena de conexión en `backend/OnlineCoursePlatform.API/appsettings.json`.
 3. Aplique las migraciones: `dotnet ef database update`.
 
 ### Backend API
 ```bash
-cd src/OnlineCoursePlatform.API
+cd backend/OnlineCoursePlatform.API
 dotnet run
 ```
 
 ### Frontend
 ```bash
-cd frontend
+cd frontend 
 npm install
 npm run dev
 ```

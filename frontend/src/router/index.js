@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 import Login from '../views/Login.vue'
+import Register from '../views/Register.vue'
 import CourseList from '../views/CourseList.vue'
 import LessonManagement from '../views/LessonManagement.vue'
 
 const routes = [
     { path: '/login', component: Login, name: 'Login' },
+    { path: '/register', component: Register, name: 'Register' },
     {
         path: '/',
         component: CourseList,

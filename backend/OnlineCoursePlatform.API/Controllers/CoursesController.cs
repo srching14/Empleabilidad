@@ -33,14 +33,14 @@ public class CoursesController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateCourseModel model)
     {
-        var course = await _courseService.CreateAsync(model.Title);
+        var course = await _courseService.CreateAsync(model.Title, model.Description);
         return CreatedAtAction(nameof(GetSummary), new { id = course.Id }, course);
     }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(Guid id, [FromBody] CreateCourseModel model)
     {
-        var course = await _courseService.UpdateAsync(id, model.Title);
+        var course = await _courseService.UpdateAsync(id, model.Title, model.Description);
         return Ok(course);
     }
 
@@ -66,4 +66,8 @@ public class CoursesController : ControllerBase
     }
 }
 
-public class CreateCourseModel { public string Title { get; set; } = string.Empty; }
+public class CreateCourseModel 
+{ 
+    public string Title { get; set; } = string.Empty; 
+    public string Description { get; set; } = string.Empty;
+}

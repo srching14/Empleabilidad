@@ -28,12 +28,13 @@ public class CourseService : ICourseService
         return await _unitOfWork.Courses.SearchAsync(searchQuery, status, page, pageSize);
     }
 
-    public async Task<Course> CreateAsync(string title)
+    public async Task<Course> CreateAsync(string title, string description)
     {
         var course = new Course
         {
             Id = Guid.NewGuid(),
             Title = title,
+            Description = description,
             Status = CourseStatus.Draft,
             IsDeleted = false,
             CreatedAt = DateTime.UtcNow,
@@ -46,7 +47,7 @@ public class CourseService : ICourseService
         return course;
     }
 
-    public async Task<Course> UpdateAsync(Guid id, string title)
+    public async Task<Course> UpdateAsync(Guid id, string title, string description)
     {
         var course = await _unitOfWork.Courses.GetByIdAsync(id);
         if (course == null)
@@ -55,6 +56,7 @@ public class CourseService : ICourseService
         }
 
         course.Title = title;
+        course.Description = description;
         course.UpdatedAt = DateTime.UtcNow;
 
         _unitOfWork.Courses.Update(course);

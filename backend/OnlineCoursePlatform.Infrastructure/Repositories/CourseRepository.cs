@@ -36,7 +36,7 @@ public class CourseRepository : ICourseRepository
 
         if (!string.IsNullOrWhiteSpace(searchQuery))
         {
-            query = query.Where(c => c.Title.Contains(searchQuery));
+            query = query.Where(c => EF.Functions.ILike(c.Title, $"%{searchQuery}%"));
         }
 
         if (status.HasValue)
